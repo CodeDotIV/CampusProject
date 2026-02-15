@@ -576,40 +576,109 @@ body {
 
 /* ----- Contact ----- */
 .contact {
-  background: var(--color-surface);
+  background: linear-gradient(160deg, #eef2ff 0%, #f5f3ff 100%);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+.contact-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.contact-info .section-title {
-  text-align: left;
+.contact-wrapper .section-title {
+  margin-bottom: 0.5rem;
 }
 
-.contact-info p {
+.contact-tagline {
   color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
 }
 
-.contact-methods {
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.contact-card {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-}
-
-.contact-link {
-  color: var(--color-primary);
-  font-weight: 500;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1.5rem;
+  min-height: 200px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
   text-decoration: none;
-  transition: color var(--transition);
+  color: var(--color-text);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-.contact-link:hover {
-  color: var(--color-secondary);
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4px;
+  height: 4px;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.contact-card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact-card-icon-phone {
+  color: var(--color-primary);
+}
+
+.contact-card-icon-phone svg {
+  width: 4px;
+  height: 4px;
+}
+
+.contact-card-icon-whatsapp {
+  color: #25d366;
+}
+
+.contact-card-icon-whatsapp svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-card-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+  line-height: 1.2;
+}
+
+.contact-card-detail {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.contact-card-whatsapp:hover {
+  border-color: #25d366;
+}
+
+.contact-card-whatsapp .contact-card-label {
+  color: #25d366;
 }
 
 .contact-form {
@@ -850,6 +919,10 @@ body {
 
   .footer-social .social-icons {
     justify-content: center;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
   }
 }
 

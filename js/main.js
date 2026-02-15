@@ -1,6 +1,6 @@
 /**
  * Campus Projects - Main JavaScript
- * Handles: sticky nav, mobile menu, smooth scroll, tabs, FAQ accordion, form validation
+ * Handles: sticky nav, mobile menu, smooth scroll, tabs, FAQ accordion
  */
 
 (function () {
@@ -9,8 +9,6 @@
   const header = document.getElementById('header');
   const navMenu = document.getElementById('nav-menu');
   const navToggle = document.getElementById('nav-toggle');
-  const contactForm = document.getElementById('contact-form');
-  const formSuccess = document.getElementById('form-success');
 
   // ----- Sticky nav & scroll -----
   function onScroll() {
@@ -92,84 +90,6 @@
       }
     });
   });
-
-  // ----- Form validation & submit -----
-  function showError(fieldId, message) {
-    const el = document.getElementById(fieldId);
-    const errEl = document.getElementById(fieldId + '-error');
-    if (el) el.classList.add('invalid');
-    if (errEl) {
-      errEl.textContent = message;
-      errEl.style.display = 'block';
-    }
-  }
-
-  function clearError(fieldId) {
-    const el = document.getElementById(fieldId);
-    const errEl = document.getElementById(fieldId + '-error');
-    if (el) el.classList.remove('invalid');
-    if (errEl) {
-      errEl.textContent = '';
-      errEl.style.display = 'none';
-    }
-  }
-
-  function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var valid = true;
-
-      ['name', 'email', 'requirement'].forEach(function (id) {
-        clearError(id);
-      });
-
-      const name = document.getElementById('name');
-      const email = document.getElementById('email');
-      const requirement = document.getElementById('requirement');
-
-      if (!name || !name.value.trim()) {
-        showError('name', 'Please enter your name.');
-        valid = false;
-      }
-
-      if (!email || !email.value.trim()) {
-        showError('email', 'Please enter your email.');
-        valid = false;
-      } else if (!validateEmail(email.value.trim())) {
-        showError('email', 'Please enter a valid email address.');
-        valid = false;
-      }
-
-      if (!requirement || !requirement.value.trim()) {
-        showError('requirement', 'Please describe your project requirement.');
-        valid = false;
-      }
-
-      if (!valid) return;
-
-      // Success: show message (in real app, send to backend here)
-      if (formSuccess) {
-        formSuccess.hidden = false;
-        formSuccess.style.display = 'block';
-        contactForm.reset();
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    });
-
-    // Clear errors on input
-    ['name', 'email', 'phone', 'requirement'].forEach(function (id) {
-      const input = document.getElementById(id);
-      if (input) {
-        input.addEventListener('input', function () {
-          clearError(id);
-        });
-      }
-    });
-  }
 
   // ----- Footer year -----
   const yearEl = document.getElementById('year');
