@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Projects - Your one-stop solution for mini and major academic projects for 3rd year and final year engineering students. Source code, documentation, PPT & viva support.">
+  <meta name="keywords" content="academic projects, mini projects, major projects, final year projects, engineering projects, CSE, IT, ECE, campus projects">
+  <title>Campus Projects | Academic Project Solutions for Engineering Students</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 1. Navigation Bar -->
+  <header class="nav-header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">Campus Projects</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. Hero / Platform Explanation -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Your One-Stop Solution for Academic Projects</h1>
+          <p class="hero-desc">
+            Get ready-made and customized <strong>mini projects</strong> and <strong>major/final year projects</strong> with complete source code, documentation, PPT, and reports. Built for 3rd year and final year engineering and degree students.
+          </p>
+          <ul class="hero-features">
+            <li>Mini & major projects</li>
+            <li>Ready-made + customized</li>
+            <li>Source code, docs, PPT & reports</li>
+          </ul>
+          <div class="hero-domains">
+            <span class="domain-tag">Web Development</span>
+            <span class="domain-tag">Machine Learning</span>
+            <span class="domain-tag">AI</span>
+            <span class="domain-tag">IoT</span>
+            <span class="domain-tag">Android</span>
+            <span class="domain-tag">Data Science</span>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span class="hero-card-icon">📚</span>
+            <p>Projects for every branch & year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Our Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Everything you need to ace your academic projects</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📦</div>
+            <h3>Mini Projects</h3>
+            <p>Hands-on mini projects with code and brief documentation for 3rd year and semester submissions.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Major Projects</h3>
+            <p>Full final year projects with complete implementation, reports, and viva preparation support.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">✏️</div>
+            <h3>Customized Projects</h3>
+            <p>Projects tailored to your syllabus, college guidelines, and technology preferences.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Project Documentation</h3>
+            <p>Professional documentation including SRS, design docs, and project reports.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>PPT & Viva Support</h3>
+            <p>Presentation slides and mock viva sessions to help you present confidently.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">💬</div>
+            <h3>Code Explanation Sessions</h3>
+            <p>Live or recorded sessions to understand every module of your project code.</p>
+          </article>
+          <article class="service-card service-card-optional">
+            <div class="service-icon">📐</div>
+            <h3>IEEE Projects</h3>
+            <p>IEEE format projects for research-oriented and conference submissions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects / Categories -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Project Categories</h2>
+        <p class="section-subtitle">Browse by year and department</p>
+        <div class="projects-tabs">
+          <button class="tab-btn active" data-tab="year">By Year</button>
+          <button class="tab-btn" data-tab="dept">By Department</button>
+        </div>
+        <div class="tab-content active" id="tab-year">
+          <div class="categories-grid">
+            <div class="category-card">
+              <h3>3rd Year</h3>
+              <p>Mini projects, lab projects, and semester projects.</p>
+              <ul>
+                <li>E-Commerce Portal</li>
+                <li>Library Management</li>
+                <li>Student Portal</li>
+                <li>Inventory System</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Request Project</a>
+            </div>
+            <div class="category-card">
+              <h3>Final Year</h3>
+              <p>Major projects with full stack, ML, IoT, and more.</p>
+              <ul>
+                <li>Smart Attendance (AI)</li>
+                <li>Healthcare App</li>
+                <li>IoT Home Automation</li>
+                <li>Recommendation Systems</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Request Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-dept">
+          <div class="categories-grid categories-grid-wide">
+            <div class="category-card small">
+              <h3>CSE / IT</h3>
+              <p>Web, ML, AI, Android, Data Science</p>
+              <a href="#contact" class="btn btn-outline">View Details</a>
+            </div>
+            <div class="category-card small">
+              <h3>ECE</h3>
+              <p>IoT, Embedded, Signal Processing</p>
+              <a href="#contact" class="btn btn-outline">View Details</a>
+            </div>
+            <div class="category-card small">
+              <h3>EEE</h3>
+              <p>Power systems, Automation, Control</p>
+              <a href="#contact" class="btn btn-outline">View Details</a>
+            </div>
+            <div class="category-card small">
+              <h3>Mechanical</h3>
+              <p>CAD, IoT, Simulation projects</p>
+              <a href="#contact" class="btn btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. How It Works -->
+    <section class="how section" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Simple steps from idea to submission</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-num">1</span>
+            <div class="timeline-content">
+              <h3>Select Project Domain</h3>
+              <p>Choose from Web Development, ML, AI, IoT, Android, Data Science, or tell us your idea.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-num">2</span>
+            <div class="timeline-content">
+              <h3>Submit Requirements</h3>
+              <p>Share your year, branch, college guidelines, and any specific technology or topic preferences.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-num">3</span>
+            <div class="timeline-content">
+              <h3>Project Details & Demo</h3>
+              <p>We share project overview, demo, and timeline. You confirm before we proceed.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-num">4</span>
+            <div class="timeline-content">
+              <h3>Delivery</h3>
+              <p>Get source code, documentation, PPT, and report as per your deadline.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-num">5</span>
+            <div class="timeline-content">
+              <h3>Support for Review & Viva</h3>
+              <p>We provide explanation sessions and viva support until you're confident.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions</p>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are projects customizable?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely! We will provide both ready-made and fully customized projects. You tell us your technologies, features, and college guidelines—we will tailor everything to your needs. Customization is always included so your project fits you perfectly.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Will source code be provided?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we will provide complete source code for every project—clean, well-structured, and ready to run. We also provide code explanation sessions so you understand every module. You get full ownership and no hidden charges.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is documentation included?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we will provide all documentation you need: project report, SRS, design documents, user manual, and any other docs your university or college requires. Everything is included so you can submit with confidence.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you provide online/offline support?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We will provide full support—online via call, WhatsApp, and email anytime you need help. We also provide explanation sessions and viva practice. Where possible, we offer offline support too. Our goal is to support you until you are fully confident.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is this suitable for university submission?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely! We will provide everything needed for university submission. Our projects meet standard college and university requirements—reports, format, and syllabus alignment. We can also customize for your institution so you get full marks with zero hassle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Contact Us</h2>
+          <p>Have a project in mind? Send your requirements and we'll get back to you soon.</p>
+          <div class="contact-methods">
+            <a href="tel:+919876543210" class="contact-link">📞 Call</a>
+            <a href="https://wa.me/919876543210" class="contact-link" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:hello@campusprojects.com" class="contact-link">✉️ hello@campusprojects.com</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="requirement">Project Requirement</label>
+            <textarea id="requirement" name="requirement" rows="4" placeholder="Year, branch, domain (e.g. Web/ML/IoT), and any specific needs..." required></textarea>
+            <span class="form-error" id="requirement-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Submit</button>
+          <div class="form-success" id="form-success" hidden>
+            Thank you! We've received your message and will get back to you soon.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">Campus Projects</a>
+        <p class="footer-tagline">Made for Students</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Campus Projects. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
