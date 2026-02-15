@@ -99,7 +99,7 @@
 
   // ----- Scroll reveal (optional) -----
   function revealOnScroll() {
-    const reveals = document.querySelectorAll('.section-title, .section-subtitle, .service-card, .category-card, .timeline-item, .faq-item, .hero-title, .hero-desc, .hero-domains');
+    const reveals = document.querySelectorAll('.section-title, .section-subtitle, .service-card, .category-card, .timeline-item, .faq-item, .hero-title, .hero-desc, .hero-features, .hero-domains');
     reveals.forEach(function (el) {
       const top = el.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
