@@ -40,6 +40,27 @@
     });
   }
 
+  // ----- WhatsApp pre-filled message -----
+  function getWhatsAppGreeting() {
+    var hour = new Date().getHours();
+    if (hour < 12) return 'Good morning';
+    if (hour < 17) return 'Good afternoon';
+    return 'Good evening';
+  }
+
+  function getWhatsAppMessage() {
+    var greeting = getWhatsAppGreeting();
+    return 'Hi, ' + greeting + '!\n\nI came across Campus Projects and I\'m interested in academic project support (mini/major projects). Could you please share the details?\n\nThank you!';
+  }
+
+  document.querySelectorAll('.wa-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var num = this.getAttribute('data-wa-number') || '918185010970';
+      var text = encodeURIComponent(getWhatsAppMessage());
+      this.href = 'https://wa.me/' + num + '?text=' + text;
+    });
+  });
+
   // ----- Smooth scroll for anchor links -----
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
