@@ -107,64 +107,49 @@
       </div>
     </section>
 
-    <!-- 4. Projects / Categories -->
+    <!-- 4. Projects -->
     <section class="projects section" id="projects">
       <div class="container">
-        <h2 class="section-title">Project Categories</h2>
-        <p class="section-subtitle">Browse by year and department</p>
-        <div class="projects-tabs">
-          <button class="tab-btn active" data-tab="year">By Year</button>
-          <button class="tab-btn" data-tab="dept">By Department</button>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Explore and get the project you like</p>
+        <div class="projects-cta">
+          <p class="projects-desc">Tell us your year, branch, and domain—we’ll help you find the right mini or major project with full support.</p>
+          <a href="#contact" class="btn btn-primary">Get Your Project</a>
         </div>
-        <div class="tab-content active" id="tab-year">
-          <div class="categories-grid">
-            <div class="category-card">
-              <h3>3rd Year</h3>
-              <p>Mini projects, lab projects, and semester projects.</p>
-              <ul>
-                <li>E-Commerce Portal</li>
-                <li>Library Management</li>
-                <li>Student Portal</li>
-                <li>Inventory System</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline">Request Project</a>
-            </div>
-            <div class="category-card">
-              <h3>Final Year</h3>
-              <p>Major projects with full stack, ML, IoT, and more.</p>
-              <ul>
-                <li>Smart Attendance (AI)</li>
-                <li>Healthcare App</li>
-                <li>IoT Home Automation</li>
-                <li>Recommendation Systems</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline">Request Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="tab-content" id="tab-dept">
-          <div class="categories-grid categories-grid-wide">
-            <div class="category-card small">
-              <h3>CSE / IT</h3>
-              <p>Web, ML, AI, Android, Data Science</p>
-              <a href="#contact" class="btn btn-outline">View Details</a>
-            </div>
-            <div class="category-card small">
-              <h3>ECE</h3>
-              <p>IoT, Embedded, Signal Processing</p>
-              <a href="#contact" class="btn btn-outline">View Details</a>
-            </div>
-            <div class="category-card small">
-              <h3>EEE</h3>
-              <p>Power systems, Automation, Control</p>
-              <a href="#contact" class="btn btn-outline">View Details</a>
-            </div>
-            <div class="category-card small">
-              <h3>Mechanical</h3>
-              <p>CAD, IoT, Simulation projects</p>
-              <a href="#contact" class="btn btn-outline">View Details</a>
-            </div>
-          </div>
+        <div class="project-cards">
+          <article class="project-card">
+            <a href="https://codedotiv.github.io/ZENI/" target="_blank" rel="noopener" class="project-card-link">
+              <div class="project-card-image-wrap">
+                <img src="assets/zeni.png" alt="Zeni" class="project-card-image" onerror="this.style.display='none'; this.nextElementSibling?.classList.add('show')">
+                <span class="project-card-placeholder">Zeni</span>
+              </div>
+              <h3 class="project-card-title">Zeni</h3>
+              <p class="project-card-desc">Productivity dashboard with today's schedule, smart suggestions, priority tasks, and analytics. Focus time tracking and task completion at a glance.</p>
+              <span class="project-card-tags">Personal · Dashboard · Productivity</span>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="https://codedotiv.github.io/Health-care/" target="_blank" rel="noopener" class="project-card-link">
+              <div class="project-card-image-wrap">
+                <img src="assets/health-claim.png" alt="Health Claim Cost Prediction" class="project-card-image" onerror="this.style.display='none'; this.nextElementSibling?.classList.add('show')">
+                <span class="project-card-placeholder">Health Claim</span>
+              </div>
+              <h3 class="project-card-title">Health Claim Cost Prediction</h3>
+              <p class="project-card-desc">Data-driven analytics and ML-based prediction for health claim costs. Visualizes trends, metrics, and diagnostics for healthcare analytics.</p>
+              <span class="project-card-tags">Analytics · ML · Healthcare</span>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="https://codedotiv.github.io/CampusProject/" target="_blank" rel="noopener" class="project-card-link">
+              <div class="project-card-image-wrap">
+                <img src="assets/campus-projects.png" alt="Campus Projects" class="project-card-image" onerror="this.style.display='none'; this.nextElementSibling?.classList.add('show')">
+                <span class="project-card-placeholder">Campus</span>
+              </div>
+              <h3 class="project-card-title">Campus Projects</h3>
+              <p class="project-card-desc">Ready-to-use mini and major academic projects for final year and campus assignments.</p>
+              <span class="project-card-tags">Campus · Academic</span>
+            </a>
+          </article>
         </div>
       </div>
     </section>
